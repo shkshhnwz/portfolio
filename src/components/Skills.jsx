@@ -13,7 +13,7 @@ const Skills = () => {
     {
       title: "Backend Development",
       icon: <Code2 className="text-gradient" size={24} style={{ color: 'var(--accent-secondary)' }} />,
-      skills: ["Node.js", "Express.js"]
+      skills: ["Node.js", "Express.js","Redis","Postman"]
     },
     {
       title: "Databases & Auth",
