@@ -1,8 +1,7 @@
 import React from 'react';
 import AnimatedSection from './AnimatedSection';
-import { Award, Trophy } from 'lucide-react';
+import { Award, Trophy, Code2 } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { link } from 'framer-motion/client';
 
 const Achievements = () => {
   const items = [
@@ -17,6 +16,12 @@ const Achievements = () => {
       description: "Actively participated in 2 Hackathons, building innovative solutions under time constraints and collaborating with peers.",
       link: "https://www.linkedin.com/posts/shahnawaz-shaikh-654326314_webdesign-hackathon-fooddeliveryapp-activity-7298538344680976384-V-qw?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAE_IMiABIjkjiarh8vY5JbxYAjK5MfJYUI0",
       icon: <Trophy size={24} style={{ color: 'var(--accent-secondary)' }} />
+    },
+    {
+      title: "Various Value Added Courses",
+      description: "Completed various value-added courses such as Advanced Web Designing, Web Development, Computer Internals, Oracle Database.",
+      link: "https://www.linkedin.com/posts/shahnawaz-shaikh-654326314_reactjs-webdevelopment-valueaddedcourse-activity-7359844568151781376-iAew?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAE_IMiABIjkjiarh8vY5JbxYAjK5MfJYUI0",
+      icon: <Code2 size={24} style={{ color: 'var(--accent-primary)' }} />
     }
   ];
 
