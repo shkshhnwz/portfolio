@@ -19,17 +19,17 @@ const Projects = () => {
       githubUrl: "https://github.com/shkshhnwz/expense-spliiter-for-shared-living"
     },
     {
-      title: "Second Project Title",
+      title: "CitizEye — Civic Reporting with AI",
       date: "Jan 2026 – Present",
-      description: "Add your second project description here.",
+      description: "CitizEye bridges the gap between citizens and civic authorities — users report local issues through a secure REST API, while an AI model classifies the problem and instantly notifies the right people.",
       features: [
-        "Key feature 1",
-        "Key feature 2",
-        "Key feature 3"
+        "AI-Powered Civic Issue Detection",
+        "End-to-End Automated Reporting System",
+        "Secure & Scalable Backend Architecture"
       ],
-      techStack: ["React", "Tailwind CSS", "Node.js"],
+      techStack: ["React", "Express.js", "Node.js", "Firebase", "CSS", "MongoDB", "Redis"],
       liveUrl: "#",
-      githubUrl: "#"
+      githubUrl: "https://github.com/shkshhnwz/Citiz-Eye"
     }
   ];
 
@@ -51,11 +51,11 @@ const Projects = () => {
   return (
     <AnimatedSection id="projects">
       <h2 className="section-title">Featured Projects</h2>
-      
+
       <div style={{ display: 'flex', flexDirection: 'column', gap: '3rem' }}>
         {projects.map((project, projIndex) => (
           <div key={projIndex} className="glass-card" style={{ maxWidth: '900px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '2rem', width: '100%' }}>
-            
+
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '1rem' }}>
               <div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.5rem' }}>
@@ -64,7 +64,7 @@ const Projects = () => {
                 </div>
                 <span style={{ color: 'var(--accent-secondary)', fontSize: '0.9rem', fontWeight: 500 }}>{project.date}</span>
               </div>
-              
+
               <div style={{ display: 'flex', gap: '1rem' }}>
                 {project.githubUrl !== "#" && (
                   <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="btn-secondary" style={{ padding: '0.5rem 1rem' }} aria-label="GitHub Repository">
@@ -90,7 +90,7 @@ const Projects = () => {
 
             <div>
               <h4 style={{ fontSize: '1rem', color: '#fff', marginBottom: '1rem' }}>Tech Stack</h4>
-              <motion.div 
+              <motion.div
                 className="tech-stack"
                 variants={containerVariants}
                 initial="hidden"
@@ -99,13 +99,13 @@ const Projects = () => {
                 style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem' }}
               >
                 {project.techStack.map((tech, index) => (
-                  <motion.span 
+                  <motion.span
                     key={index}
                     variants={itemVariants}
-                    style={{ 
-                      background: 'rgba(255, 255, 255, 0.05)', 
-                      border: '1px solid rgba(255, 255, 255, 0.1)', 
-                      padding: '0.4rem 1rem', 
+                    style={{
+                      background: 'rgba(255, 255, 255, 0.05)',
+                      border: '1px solid rgba(255, 255, 255, 0.1)',
+                      padding: '0.4rem 1rem',
                       borderRadius: '999px',
                       fontSize: '0.85rem',
                       color: 'var(--text-primary)',
@@ -118,7 +118,7 @@ const Projects = () => {
                 ))}
               </motion.div>
             </div>
-            
+
           </div>
         ))}
       </div>
