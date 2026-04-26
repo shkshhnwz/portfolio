@@ -5,6 +5,7 @@ import Education from './components/Education';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Achievements from './components/Achievements';
+import Certification from './components/Certification';
 import Footer from './components/Footer';
 
 function App() {
@@ -14,17 +15,18 @@ function App() {
         <div className="blob blob-1"></div>
         <div className="blob blob-2"></div>
       </div>
-      
+
       <Navbar />
-      
+
       <main className="container">
         <Hero />
         <Education />
         <Projects />
         <Skills />
+        <Certification />
         <Achievements />
       </main>
-      
+
       <Footer />
     </>
   );
