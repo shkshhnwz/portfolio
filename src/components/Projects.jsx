@@ -20,7 +20,7 @@ const Projects = () => {
     },
     {
       title: "CitizEye — Civic Reporting with AI",
-      date: "Jan 2026 – Present",
+      date: "April 2026 – June 2026",
       description: "CitizEye bridges the gap between citizens and civic authorities — users report local issues through a secure REST API, while an AI model classifies the problem and instantly notifies the right people.",
       features: [
         "AI-Powered Civic Issue Detection",
