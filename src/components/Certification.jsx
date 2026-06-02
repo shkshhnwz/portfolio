@@ -9,7 +9,7 @@ const Certification = () => {
             title: 'Amazon Cloud Foundation',
             date: 'April 2026',
             description: 'Completed the AWS Academy Cloud Foundations program covering core cloud computing concepts including AWS global infrastructure, core services, cloud security, pricing models, and support plans. Verified by Credly.',
-            link: 'https://www.credly.com/badges/f81a9499-3ade-4c9f-9cbd-997871965b11',
+            link: 'https://www.credly.com/badges/f81a9499-3ade-4c9f-9cbd-997871965b11/public_url',
             icon: <Cloud size={24} style={{ color: 'var(--accent-primary)' }} />
         }
     ];

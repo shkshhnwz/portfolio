@@ -28,7 +28,7 @@ const Projects = () => {
         "Secure & Scalable Backend Architecture"
       ],
       techStack: ["React", "Express.js", "Node.js", "Firebase", "CSS", "MongoDB", "Redis"],
-      liveUrl: "#",
+      liveUrl: "https://citizeye.netlify.app/",
       githubUrl: "https://github.com/shkshhnwz/Citiz-Eye"
     }
   ];
